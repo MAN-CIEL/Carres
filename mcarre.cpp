@@ -79,4 +79,25 @@ int main()
 		carres[i].Afficher();
 		cout << endl;
 	}
+
+
+	// Création d'un carré en allocation de mémoire sur le tas
+	cout << "\nCreation d'un carre en allocation de memoire sur le tas:" << endl;
+	CCarre* carre2 = new CCarre(100, 100, 40);
+
+	// Test des méthodes sur ce carré 
+	cout << "\nCaracteristiques de ce carre :" << endl;
+	carre2->Afficher();
+
+	cout << "\nDeplacement de ce carre vers l'est de 15 pixels." << endl;
+	carre2->Deplacer('e', 15);
+	carre2->Afficher();
+
+	cout << "\nDeplacement de ce carre avec vecteur (dx=10, dy=-20)." << endl;
+	carre2->Deplacer(10, -20);
+	carre2->Afficher();
+
+	// delete à la fin du carré
+	cout << "\nSuppression du carre en allocation de memoire sur le tas." << endl;
+	delete carre2;
 }
