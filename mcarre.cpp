@@ -14,9 +14,15 @@ int main()
 	carre.Setcote(8);
 	//carre.Afficher();
 
-	cout << endl;
+	/*cout << endl;
 	cout << "Test des getters :" << endl;
 	cout << "Coordonnee sx (via Getsx) : " << carre.Getsx() << endl;
 	cout << "Coordonnee sy (via Getsy) : " << carre.Getsy() << endl;
-	cout << "Longueur du cote (via Getcote) : " << carre.GetCote() << endl;
+	cout << "Longueur du cote (via Getcote) : " << carre.GetCote() << endl;*/
+
+	carre.Deplacer('n', 4);
+
+	// Affichage après déplacement
+	cout << "Caracteristiques apres deplacement(direction et saut) :" << endl;
+	carre.Afficher();
 }
