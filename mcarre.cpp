@@ -12,5 +12,11 @@ int main()
 	carre.Setsx(2);
 	carre.Setsy(4);
 	carre.Setcote(8);
-	carre.Afficher();
+	//carre.Afficher();
+
+	cout << endl;
+	cout << "Test des getters :" << endl;
+	cout << "Coordonnee sx (via Getsx) : " << carre.Getsx() << endl;
+	cout << "Coordonnee sy (via Getsy) : " << carre.Getsy() << endl;
+	cout << "Longueur du cote (via Getcote) : " << carre.GetCote() << endl;
 }

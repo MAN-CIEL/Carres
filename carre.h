@@ -25,4 +25,16 @@ public:
 	// Méthode pour afficher les caractéristiques du carré
 	// Valeur de sx, sy et cote en sortie
 	void Afficher();
+
+	// Méthode qui retourne sx
+	// Sans entrée ni sortie, valeur de sx en retour
+	int Getsx();
+
+	// Méthode qui retourne sy
+	// Sans entrée ni sortie, valeur de sy en retour
+	int Getsy();
+
+	// Méthode qui retourne cote
+	// Sans entrée ni sortie, valeur de cote en retour
+	int GetCote();
 };
