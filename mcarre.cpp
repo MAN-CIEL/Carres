@@ -12,7 +12,7 @@ int main()
 	carre.Setsx(2);
 	carre.Setsy(4);
 	carre.Setcote(8);
-	//carre.Afficher();
+	carre.Afficher();
 
 	/*cout << endl;
 	cout << "Test des getters :" << endl;
@@ -20,9 +20,24 @@ int main()
 	cout << "Coordonnee sy (via Getsy) : " << carre.Getsy() << endl;
 	cout << "Longueur du cote (via Getcote) : " << carre.GetCote() << endl;*/
 
-	carre.Deplacer('n', 4);
+	/*carre.Deplacer('n', 4);
 
 	// Affichage après déplacement
 	cout << "Caracteristiques apres deplacement(direction et saut) :" << endl;
+	carre.Afficher();*/
+
+	// Test de la surcharge Deplacer (vecteur dx, dy)
+	int dx, dy;
+	cout << "\nDeplacer le carre en indiquant un vecteur de deplacement." << endl;
+	cout << "Entrez le deplacement en x (dx) : ";
+	cin >> dx;
+	cout << "Entrez le deplacement en y (dy) : ";
+	cin >> dy;
+
+	carre.Deplacer(dx, dy);
+
+	cout << "\nCaracteristiques apres deplacement (vecteur dx, dy) :" << endl;
 	carre.Afficher();
+
+
 }

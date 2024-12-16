@@ -46,4 +46,8 @@ public:
 	//   - saut : nombre de pixels de déplacement du carré 
 	// Sortie : Aucune 
 	void Deplacer(char direction, int saut);
+
+	// Surcharge : déplacement en fonction d'un vecteur dx, dy
+	// Entrées : coordonnées d'un vecteur de déplacement soit dx et dy qui s'ajouteront aux coordonnées de la position du sommet du carré
+	void Deplacer(int dx, int dy);
 };
