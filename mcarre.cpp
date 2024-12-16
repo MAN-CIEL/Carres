@@ -43,7 +43,7 @@ int main()
 	CCarre carres[4];
 
 	// Initialisation des carrés avec des valeurs différentes
-	carres[0].Setsx(5);
+	/*carres[0].Setsx(5);
 	carres[0].Setsy(4);
 	carres[0].Setcote(10);
 	carres[1].Setsx(2);
@@ -56,6 +56,21 @@ int main()
 	carres[3].Setsy(8);
 	carres[3].Setcote(30);
 	
+	// Affichage des caractéristiques de chaque carré
+	cout << "Tableau de carres :" << endl;
+	for (int i = 0; i < 4; ++i)
+	{
+		cout << "Carre " << i + 1 << ":" << endl;
+		carres[i].Afficher();
+		cout << endl;
+	}*/
+
+	// Initialisation des carrés avec le constructeur paramétré
+	carres[0] = CCarre(10, 10, 20);
+	carres[1] = CCarre(30, 40, 25);
+	carres[2] = CCarre(50, 60, 30);
+	carres[3] = CCarre(70, 80, 35);
+
 	// Affichage des caractéristiques de chaque carré
 	cout << "Tableau de carres :" << endl;
 	for (int i = 0; i < 4; ++i)

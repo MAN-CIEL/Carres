@@ -66,3 +66,17 @@ void CCarre::Deplacer(int dx, int dy)
     sx += dx;
     sy += dy;
 }
+
+CCarre::CCarre()
+{
+    sx = 0;
+    sy = 0;
+    cote = 0;
+}
+
+CCarre::CCarre(int csx, int csy, int ccote)
+{
+    sx = csx;
+    sy = csy;
+    cote = ccote;
+}

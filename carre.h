@@ -50,4 +50,10 @@ public:
 	// Surcharge : déplacement en fonction d'un vecteur dx, dy
 	// Entrées : coordonnées d'un vecteur de déplacement soit dx et dy qui s'ajouteront aux coordonnées de la position du sommet du carré
 	void Deplacer(int dx, int dy);
+
+	// Constructeur par défaut
+	CCarre();
+
+	// Constructeur avec paramètres
+	CCarre(int sx, int sy, int cote);
 };
